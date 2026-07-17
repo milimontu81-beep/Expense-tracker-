@@ -3,9 +3,9 @@ Expenses=[]
 #using while loop to run the program for multiple times
 while True:
 #greeting the user and showing the menu
-  print("wellcome to expanse tracker")
-  print("1. add expanses")
-  print("2. view expanses")
+  print("wellcome to expense tracker")
+  print("1. add expenses")
+  print("2. view expenses")
   print("3. see total expanses")
   print("4. exit")
   choice = int(input("enter your choice:"))
@@ -18,28 +18,28 @@ while True:
     date=input("enter the date:")
 
     expanselist={"amount":amount,"category":category,"date":date}
-    print("expanse added successfully")
+    print("expense added successfully")
 
-    Expenses.append(expanselist)
+    Expenses.append(expenselist)
     
 #to view the expense list
   elif (choice==2):
-    print("here is your expanse list")
+    print("here is your expense list")
     count=1
     for each in  Expenses:
       print(f"{count}.amount:{each['amount']},date:{each['date']},category:{each['category']}")
     count=count+1
-#to see the total expanse
+#to see the total expense
   elif (choice==3):
     total=0
     for each in Expenses:
       total= total+each["amount"]
-    print("total expanse is:",total)
-    print("thankyou for using our expanse tracker")
+    print("total expense is:",total)
+    print("thankyou for using our expense tracker")
  #to exit the program   
   elif (choice==4):
-    print("thankyou for using our expanse tracker")
-  break
+    print("thankyou for using our expense tracker")
+    break
 #to show the user that the choice is invalid
 else:
     print("invalid choice")
