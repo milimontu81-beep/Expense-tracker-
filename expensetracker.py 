@@ -1,1 +1,46 @@
-i
+#Expense tracker
+Expenses=[]
+#using while loop to run the program for multiple times
+while True:
+#greeting the user and showing the menu
+  print("wellcome to expanse tracker")
+  print("1. add expanses")
+  print("2. view expanses")
+  print("3. see total expanses")
+  print("4. exit")
+  choice = int(input("enter your choice:"))
+#puting the condition to run the program according to the user choice 
+#to add Expenses
+  if (choice==1):
+
+    amount=float(input("enter the amount:"))
+    category=input("enter the category:")
+    date=input("enter the date:")
+
+    expanselist={"amount":amount,"category":category,"date":date}
+    print("expanse added successfully")
+
+    Expenses.append(expanselist)
+    
+#to view the expense list
+  elif (choice==2):
+    print("here is your expanse list")
+    count=1
+    for each in  Expenses:
+      print(f"{count}.amount:{each['amount']},date:{each['date']},category:{each['category']}")
+    count=count+1
+#to see the total expanse
+  elif (choice==3):
+    total=0
+    for each in Expenses:
+      total= total+each["amount"]
+    print("total expanse is:",total)
+    print("thankyou for using our expanse tracker")
+ #to exit the program   
+  elif (choice==4):
+    print("thankyou for using our expanse tracker")
+  break
+#to show the user that the choice is invalid
+else:
+    print("invalid choice")
+  
