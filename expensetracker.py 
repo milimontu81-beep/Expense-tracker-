@@ -1,46 +1,50 @@
-#Expense tracker
-Expenses=[]
-#using while loop to run the program for multiple times
-while True:
-#greeting the user and showing the menu
-  print("wellcome to expense tracker")
+
   print("1. add expenses")
   print("2. view expenses")
-  print("3. see total expanses")
+  print("3. see total expenses")
   print("4. exit")
-  choice = int(input("enter your choice:"))
-#puting the condition to run the program according to the user choice 
+  choice = input("enter your choice:")
+  if choice.isalpha():
+    print("invalid choice, please enter any a number from 1 to 4")
+  else:
+#puting the condition to run the program according to the user choice
 #to add Expenses
-  if (choice==1):
+   choice=int(choice)
+   if (choice==1):
 
     amount=float(input("enter the amount:"))
     category=input("enter the category:")
     date=input("enter the date:")
 
-    expanselist={"amount":amount,"category":category,"date":date}
+    expenselist={"amount":amount,"category":category,"date":date}
     print("expense added successfully")
 
     Expenses.append(expenselist)
     
 #to view the expense list
-  elif (choice==2):
+   elif (choice==2):
     print("here is your expense list")
     count=1
     for each in  Expenses:
-      print(f"{count}.amount:{each['amount']},date:{each['date']},category:{each['category']}")
-    count=count+1
+      print(f"{count}.amount:${each['amount']},date:{each['date']},category:{each['category']}")
+      count=count+1
+    if len(Expenses)==0:
+      print("no expenses found")
+    
 #to see the total expense
-  elif (choice==3):
+   elif (choice==3):
     total=0
     for each in Expenses:
       total= total+each["amount"]
-    print("total expense is:",total)
+    print("total expanse is:",total)
     print("thankyou for using our expense tracker")
  #to exit the program   
-  elif (choice==4):
+   elif (choice==4):
     print("thankyou for using our expense tracker")
     break
 #to show the user that the choice is invalid
-else:
+   else:
     print("invalid choice")
+  
+  
   
