@@ -11,6 +11,7 @@ A simple Python application to track your daily expenses. Easily add, view, and 
 -  Simple menu-driven interface
 -  User-friendly interactive application
 -  Store multiple expenses
+-  Store expense history and total expenses in JSON file
 
 # How It Works
 
