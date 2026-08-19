@@ -1,26 +1,55 @@
-
 # Expense Tracker
 
-A simple Python application to track your daily expenses. Easily add, view, and calculate your total spending with category organization and date tracking.
+A simple Python application for tracking daily expenses. It allows users to add, view, and calculate their total expenses while organizing expenses by category and date.
 
-# Features
+## Features
 
--  Add expenses with amount, category, and date
--  View all expenses in a formatted list
--  Calculate total expenses
--  Simple menu-driven interface
--  User-friendly interactive application
--  Store multiple expenses
--  Store expense history and total expenses in JSON file
+- Add expenses with amount, category, and date
+- View all recorded expenses
+- Calculate total expenses
+- Store multiple expenses
+- Store expense history using JSON
+- Store total expenses using JSON
+- Persistent data storage between program sessions
+- Simple menu-driven interface
+- Input validation and error handling
+- Uses only Python's built-in modules
 
-# How It Works
+## How It Works
 
-1. **Add Expenses** - Enter amount, category, and date
-2. **View Expenses** - See all your recorded expenses
-3. **Calculate Total** - Get the sum of all expenses
-4. **Exit** - Close the application
+1. **Add Expense** - Enter the amount, category, and date.
+2. **View Expenses** - View previously recorded expenses.
+3. **See Total Expenses** - Calculate and display the total amount spent.
+4. **Exit** - Close the application.
 
-# Requirements
+## Data Storage
+
+The project uses a JSON file (`expense_data.json`) to store expense data and total expenses.
+
+This allows the data to remain available even after the program is closed and opened again.
+
+## Technologies Used
+
+- Python 3
+- JSON
+- File Handling
+- Lists and Dictionaries
+- Exception Handling
+
+## Requirements
 
 - Python 3.x
-- No external libraries required (uses only built-in modules)
+- No external libraries required
+- Uses Python's built-in `json` module
+
+## What I Learned
+
+Through this project, I practiced:
+
+- Python programming
+- File handling
+- JSON data storage
+- Lists and dictionaries
+- Exception handling
+- Data persistence
+- Building a menu-driven application
