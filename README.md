@@ -63,7 +63,7 @@ Through this project, I practiced:
 ### Steps
 
 1. Open the `expense_tracker-v2` folder.
-2. Download `main.py` and `expense_data.json`.
+2. Download `main.py` and `expense.json`.
 3. Keep both files in the same folder.
 4. Run `main.py` using Python 3.
 5. Follow the instructions shown in the terminal.
