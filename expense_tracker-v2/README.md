@@ -53,3 +53,18 @@ Through this project, I practiced:
 - Exception handling
 - Data persistence
 - Building a menu-driven application
+
+## How to Run
+
+### Requirements
+- Python 3.x
+- No external libraries required
+
+### Steps
+
+1. Open the `expense_tracker-v2` folder.
+2. Download `main.py` and `expense.json`.
+3. Keep both files in the same folder.
+4. Run `main.py` using Python 3.
+5. Follow the instructions shown in the terminal.
+
